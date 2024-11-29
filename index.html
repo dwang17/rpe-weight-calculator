@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPE to Weight Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>RPE to Weight Calculator</h1>
+    <div>
+        <label for="RPESelection">Select RPE:</label>
+        <select id="RPESelection">
+            <option value="10">10</option>
+            <option value="9.5">9.5</option>
+            <option value="9">9</option>
+            <option value="8.5">8.5</option>
+            <option value="8">8</option>
+            <option value="7.5">7.5</option>
+            <option value="7">7</option>
+            <option value="6.5">6.5</option>
+            <option value="6">6</option>
+            <option value="5.5">5.5</option>
+            <option value="5">5</option>
+            <option value="4.5">4.5</option>
+            <option value="4">4</option>
+            <option value="3.5">3.5</option>
+            <option value="3">3</option>
+            <option value="2.5">2.5</option>
+            <option value="2">2</option>
+            <option value="1.5">1.5</option>
+            <option value="1">1</option>
+            <option value="0.5">0.5</option>
+            <option value="0">0</option>
+        </select>
+    </div>
+    <div>
+        <label for="RepSelection">Select Amount of Reps:</label>
+        <select id="RepSelection">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+        </select>
+    </div>
+    <div id="Calculator">
+        <label for="MaxWeight">Enter Max:</label>
+        <input id="MaxWeight" type="number">
+    </div>
+    <button onclick="calculateWeight()">Calculate Weight to Load</button>
+    <div id="Output">
+        <label for="ResultWeight">Weight to Load:</label>
+        <input id="ResultWeight" readonly>
+    </div>
+    <p>DISCLAIMER: The calculator above is intended for liters to approximate load based on given RPE and rep scheme and is NOT a 
+        concrete value that lifters must follow in their training; the given load can be adjusted higher or lower based on lifters' 
+        perceived physical condition/feedback and simply serves as a percentage approximation of what a lifter should load.
+    </p>
+    <p>RPE percentage values are derived from a expanded version of Mike Tuscherer's RPE chart created by a user on the Exodus
+        Strength forum <a href="https://www.exodus-strength.com/forum/viewtopic.php?t=2967" target="_blank">
+            https://www.exodus-strength.com/forum/viewtopic.php?t=2967</a>
+    </p>
+    <p>Created by David Wang</p>
+    <script src="script.js"></script>
+</body>
+</html>
